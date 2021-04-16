@@ -1,5 +1,5 @@
-#include "stabbingFunctions.cpp"
-// #include "stabbingLines.h"
+//#include "stabbingFunctions.cpp"
+#include "stabbingLines.h"
 
 
 
@@ -28,8 +28,8 @@ printing, for each line, the LinId and their end point coordinates
 
 //TODO change points count later
 	readPoints(pointsFile, pointsArray, 10, counts);
-	readLines(linesFile, linesArray, 10, counts);
-	getStabbedLines(10, linesArray, 10, 10, pointsArray, 10, stabbedLines, 10, counts);
+	readLines(linesFile, linesArray, 10, pointsArray, counts);
+	getStabbedLines(counts, linesArray, counts, counts, pointsArray, counts, stabbedLines, counts, counts);
 	printLineByCoords(5, linesArray, 10, pointsArray, 10);
 
 }
